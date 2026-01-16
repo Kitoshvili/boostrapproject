@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap & SCSS Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">
+                <i class="fa-solid fa-code me-2"></i>DIGITAL.LAB
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link mx-2" href="#home">მთავარი</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#features">სერვისები</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#contact">კონტაქტი</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-primary rounded-pill px-4" href="#">შესვლა</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-3 fw-bold mb-4">შექმენი მომავალი <span class="text-primary">Bootstrap</span>-ით</h1>
+                    <p class="lead mb-5 text-secondary">გამოიყენეთ SCSS-ის ძალა და Bootstrap-ის მოქნილობა თანამედროვე, სწრაფი და რესპონსიული ვებ-გვერდების ასაწყობად.</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#features" class="btn btn-primary btn-lg shadow">დაიწყე ახლა</a>
+                        <a href="#" class="btn btn-light btn-lg border">ნახე ვიდეო</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="https://illustrations.popsy.co/gray/web-design.svg" alt="Hero Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">რატომ ჩვენ?</h2>
+                <p class="text-secondary">ჩვენ გთავაზობთ საუკეთესო გადაწყვეტილებებს თქვენი ბიზნესისთვის</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="custom-card">
+                        <div class="icon-box mb-3">
+                            <i class="fa-solid fa-bolt fa-2x"></i>
+                        </div>
+                        <h3>სწრაფი მუშაობა</h3>
+                        <p>ჩვენი კოდი ოპტიმიზირებულია მაქსიმალური სისწრაფისთვის და ეფექტურობისთვის.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-card">
+                        <div class="icon-box mb-3">
+                            <i class="fa-solid fa-layer-group fa-2x"></i>
+                        </div>
+                        <h3>SCSS სტრუქტურა</h3>
+                        <p>სუფთა და ორგანიზებული სტილები, რომლებიც მარტივია სამართავად და შესაცვლელად.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-card">
+                        <div class="icon-box mb-3">
+                            <i class="fa-solid fa-mobile-screen fa-2x"></i>
+                        </div>
+                        <h3>Mobile First</h3>
+                        <p>თქვენი საიტი იდეალურად გამოჩნდება როგორც სმარტფონებზე, ისე დიდ მონიტორებზე.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="fw-bold mb-4">დაგვიკავშირდით</h2>
+                    <form class="text-start shadow-sm p-4 rounded-4 bg-white border">
+                        <div class="mb-3">
+                            <label class="form-label">სახელი</label>
+                            <input type="text" class="form-control rounded-3" placeholder="თქვენი სახელი">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">ელ-ფოსტა</label>
+                            <input type="email" class="form-control rounded-3" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">შეტყობინება</label>
+                            <textarea class="form-control rounded-3" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 rounded-3">გაგზავნა</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-4 text-primary">Digital Lab</h5>
+                    <p class="text-secondary">ინოვაციური ვებ-გადაწყვეტილებები თქვენი წარმატებისთვის.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-4">ბმულები</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none opacity-75">წესები და პირობები</a></li>
+                        <li><a href="#" class="text-white text-decoration-none opacity-75">კონფიდენციალურობა</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <h5 class="text-uppercase fw-bold mb-4">სოციალური ქსელები</h5>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-github fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 opacity-25">
+            <div class="text-center opacity-50">
+                <small>&copy; 2026 DIGITAL.LAB — ყველა უფლება დაცულია</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
